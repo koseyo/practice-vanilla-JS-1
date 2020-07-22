@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テキストリーダー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>テキストリーダー</h1>
+        <button id="toggle" class="btn btn-toggle">
+            テキストボックスを出す
+        </button>
+        <div id="text-box" class="text-box">
+            <div id="close" class="close">X</div>
+            <h3>声の種類</h3>
+            <select id="voices"></select>
+            <textarea id="text" placeholder="enter text to read"></textarea>
+            <button id="read" class="btn">テキストを読む</button>
+        </div>
+        <main></main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

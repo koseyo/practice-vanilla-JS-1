@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user">
+        </div>
+        <ul>
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">ポートフォリオ</a></li>
+            <li><a href="#">ブログ</a></li>
+            <li><a href="#">連絡先</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <button id="toggle" class="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+
+        <h1>ランディングページ</h1>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, pariatur minima corporis distinctio ad officiis voluptas perferendis illum harum praesentium hic assumenda rerum temporibus eius! Rerum itaque a officiis veritatis?
+        </p>
+
+        <button class="cta-btn" id="open">ログイン</button>
+    </header>
+
+    <div class="container">
+        <h2>what is this landing page about?</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum veritatis facilis voluptates voluptatem facere dicta inventore quos corrupti doloribus ullam? Animi nisi officia, ipsam rem cupiditate distinctio illum aliquid dignissimos!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas facere deserunt suscipit distinctio dolor deleniti quisquam, perferendis in placeat labore similique, mollitia, temporibus pariatur saepe! Eaque corporis dolores blanditiis dolorem.</p>
+
+        <h2>tell me more</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illum iusto a quaerat tempora, quas voluptatibus nisi debitis ut! Cumque, ullam ipsa cum dolor veniam odit similique soluta nam beatae.
+        </p>
+
+        <h2>benefits</h2>
+        <ul>
+            <li>lifetime access</li>
+            <li>30 day money back</li>
+            <li>customer support</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perferendis, cum vitae necessitatibus aperiam libero laborum odit? Hic, nulla quas aut veritatis alias dignissimos accusantium molestias, animi excepturi facere Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dicta deleniti alias sequi nostrum hic dolore. Adipisci nobis, rem eligendi cum quasi velit similique modi quisquam aut optio consequatur ea.</p>
+    </div>
+
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close-btn" id="close">
+                <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>サインアップ</h3>
+            </div>
+            <div class="modal-content">
+                <p>register with us to get offers support more</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="name">名前</label>
+                        <input type="text" id="name" class="form-input" placeholder="名前を記入してください">
+                    </div>
+                    <div>
+                        <label for="email">メール</label>
+                        <input type="email" id="email" class="form-input" placeholder="メールを記入してください">
+                    </div>
+                    <div>
+                        <label for="password">パスワード</label>
+                        <input type="password" id="password" class="form-input" placeholder="パスワードを記入してください">
+                    </div>
+                    <div>
+                        <label for="password2">確認パスワード</label>
+                        <input type="password" id="password2" class="form-input" placeholder="確認のためもう一度パスワードを記入してください">
+                    </div>
+                    <input type="submit" value="送信する" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

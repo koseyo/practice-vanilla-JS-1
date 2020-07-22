@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハングマン</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ハングマン</h1>
+    <p>隠された言葉を推理してみましょう　文字を入力して下さい</p>
+    <div class="game-container">
+        <svg height="250" width="200" class="figure-container">
+            <line x1="60" x2="140" y1="20" y2="20" class="figure-part" />
+            <line x1="140" x2="140" y1="20" y2="50" class="figure-part" />
+            <line x1="60" x2="60" y1="20" y2="230" class="figure-part" />
+            <line x1="20" x2="100" y1="230" y2="230" class="figure-part" />
+            
+            <!-- head -->
+            <circle cx="140" cy="70" r="20" class="figure-part" />
+            <!-- body -->
+            <line x1="140" x2="140" y1="90" y2="150" class="figure-part" />
+            <!-- arms -->
+            <line x1="140" x2="120" y1="120" y2="100" class="figure-part" />
+            <line x1="140" x2="160" y1="120" y2="100" class="figure-part" />
+            <!-- legs -->
+            <line x1="140" x2="120" y1="150" y2="180" class="figure-part" />
+            <line x1="140" x2="160" y1="150" y2="180" class="figure-part" />
+        </svg>
+
+        <div class="wrong-letters-container">
+            <div id="wrong-letters">
+
+            </div>
+        </div>
+
+        <div class="word" id="word">
+           
+        </div>
+    </div>
+
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <h2 id="final-message"></h2>
+            <button id="play-again">もう一度遊ぶ</button>
+        </div>
+    </div>
+
+    <div class="notification-container" id="notification-container">
+        <p>既に入力した言葉です</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

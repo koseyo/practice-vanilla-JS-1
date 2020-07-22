@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>為替レート計算機</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <img src="img/money.png" class="money-img"> -->
+    <h1>為替レート計算機</h1>
+    <p>交換する通貨とレートを選んでください</p>
+
+    <div class="container">
+        <div class="currency">
+            <select id="currency-1">
+                <option value="AUD">AUD オーストラリアドル</option>
+                <option value="CAD">CAD カナダドル</option>
+                <option value="CNY">CNY 中国人民元</option>
+                <option value="EUR">EUR ユーロ</option>
+                <option value="GBP">GBP イギリスポンド</option>
+                <option value="INR">INR インドルピー</option>
+                <option value="JPY" selected>JPY 日本円</option>
+                <option value="PHP">PHP フィリピンペソ</option>
+                <option value="SGD">SGD シンガポールドル</option>
+                <option value="USD">USD アメリカドル</option>
+            </select>
+            <input type="number" id="money-1" placeholder="0" value="1">
+        </div>
+
+        <div class="currency">
+            <select id="currency-2">
+                <option value="AUD">AUD オーストラリアドル</option>
+                <option value="CAD">CAD カナダドル</option>
+                <option value="CNY">CNY 中国人民元</option>
+                <option value="EUR">EUR ユーロ</option>
+                <option value="GBP">GBP イギリスポンド</option>
+                <option value="INR">INR インドルピー</option>
+                <option value="JPY">JPY 日本円</option>
+                <option value="PHP">PHP フィリピンペソ</option>
+                <option value="SGD">SGD シンガポールドル</option>
+                <option value="USD" selected>USD アメリカドル</option>
+            </select>
+            <input type="number" id="money-2">
+        </div>
+
+        <div class="swap-rate-container">
+            <button class="btn" id="swap">交換</button>
+            <div class="rate" id="rate"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
